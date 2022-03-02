@@ -31,6 +31,9 @@ html {
 
 h1 {
   font-size: 4rem;
+
+  color: black;
+  font-weight: bold;
 }
 
 h2 {
@@ -41,6 +44,7 @@ h2 {
   height: 30vh;
 
   margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 h3 {
@@ -52,13 +56,21 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
-  padding: 30px;
+  padding: 30px 15px 5px 15px;
 
   width: 300px;
-  letter-spacing: 1.5px;
+
   color: white;
   border-bottom: 2px solid rgba(255, 0, 0, 0.623);
   text-align: center;
+}
+
+p,
+h3,
+h4,
+h2,
+span {
+  letter-spacing: 1.5px;
 }
 
 .center {
@@ -66,6 +78,37 @@ h4 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.row {
+  margin: 0 auto 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  padding: 0 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+  width: 70%;
+}
+
+.styledButton {
+  padding: 10px;
+  width: 150px;
+  border: 1px solid rgba(255, 0, 0, 0.623);
+  transition: all 400ms ease;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.styledButton:hover {
+  background-color: rgba(255, 0, 0, 0.623);
 }
 
 /* -------------------------HERO SECTION  */
@@ -83,10 +126,6 @@ h4 {
   width: 60%;
   height: 30%;
   margin-left: 20px;
-
-  color: black;
-  font-weight: bold;
-  font-size: 4rem;
 
   position: absolute;
   top: 50%;
@@ -123,21 +162,24 @@ nav {
 
 .aboutMe-section {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   text-align: center;
   display: block;
   line-height: 140%;
 }
 
 .aboutMe-section h2 {
-  margin: 0;
+  margin-top: 0;
 }
 
 .aboutMe-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: calc(100% - 30%);
+}
+
+.aboutMe-container .text {
+  flex-direction: column;
+  padding-right: 0;
+  gap: 30px;
 }
 
 .aboutMe-background {
@@ -146,12 +188,13 @@ nav {
 }
 
 .aboutMe-picture {
+  min-width: 320px;
   width: 30%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 400px;
 
   background-color: rgba(248, 248, 248, 0.623);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
@@ -165,7 +208,6 @@ nav {
 .picture-container {
   width: 80%;
   height: 80%;
-  border-radius: 50%;
   transition: transform 400ms ease;
 }
 
@@ -176,16 +218,6 @@ nav {
   object-fit: cover;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
-}
-
-.aboutMe-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  padding: 50px;
-  width: 70%;
 }
 
 .aboutMe-textContainer {
@@ -200,10 +232,10 @@ nav {
   margin-bottom: 100px;
 }
 
-.projectContainer {
+.projects-container {
   width: 90%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -220,10 +252,10 @@ nav {
 }
 
 .project-imgContainer {
-  max-width: 700px;
-  min-width: 500px;
-  max-height: 500px;
-  object-fit: cover;
+  min-width: 420px;
+  width: 50%;
+  height: 80%;
+  transition: transform 400ms ease;
 }
 
 .project-imgContainer img {
@@ -235,14 +267,13 @@ nav {
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
-.project-text {
+.project-contentContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  text-align: justify;
-  padding: 50px;
-  width: 70%;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 50%;
 }
 
 footer {
@@ -257,15 +288,36 @@ footer {
 
 .icons {
   height: 20vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.slide-right {
-  animation: 1s slide-right 1s forwards;
+
+.icons-mini {
+  width: 50px;
+  height: 50px;
+  filter: invert(98%) sepia(0%) saturate(9%) hue-rotate(157deg) brightness(102%)
+    contrast(102%);
+}
+.icons-mini:hover {
+  filter: invert(11%) sepia(74%) saturate(6288%) hue-rotate(4deg)
+    brightness(100%) contrast(119%);
 }
 
 footer a {
-  padding: 10px;
+  padding: 15px;
 }
 
+footer p {
+  padding: 4px;
+  color: white;
+}
+
+.slide-right {
+  animation: 1s slide-right 1s forwards;
+}
 @keyframes slide-right {
   to {
     transform: translate(-90%, -100%);
