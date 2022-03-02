@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  text-rendering: optimizeLegibility;
+  font-weight: 300;
+}
+
+::-webkit-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: none;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: rgba(255, 0, 0, 0.623);
+}
+
+::selection {
+  color: white;
+  background: rgba(255, 0, 0, 0.623);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.623);
+
+  height: 30vh;
+
+  margin-bottom: 100px;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin: 50px 0 50px 50px;
+
+  border-bottom: 2px solid rgba(255, 0, 0, 0.623);
+}
+
+h4 {
+  font-size: 1.5rem;
+  padding: 30px;
+
+  width: 300px;
+  letter-spacing: 1.5px;
+  color: white;
+  border-bottom: 2px solid rgba(255, 0, 0, 0.623);
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------HERO SECTION  */
+.hero-section {
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 60%;
+  height: 30%;
+  margin-left: 20px;
+
+  color: black;
+  font-weight: bold;
+  font-size: 4rem;
+
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-300%, -100%);
+  z-index: 2;
+}
+
+.word-color {
+  color: rgba(255, 0, 0, 0.623);
+}
+
+/* -------------------------NAVBAR*/
+
+/* .navbar-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+nav {
+  width: 7.5%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.623);
+}
+
+.content {
+  width: 92.5%;
+  height: 100%;
+  left: 7.5%;
+} */
+
+/* -------------------------ABOUT ME SECTION  */
+
+.aboutMe-section {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: block;
+  line-height: 140%;
+}
+
+.aboutMe-section h2 {
+  margin: 0;
+}
+
+.aboutMe-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 30%);
+}
+
+.aboutMe-background {
+  height: 20vh;
+  background-color: rgba(255, 0, 0, 0.623);
+}
+
+.aboutMe-picture {
+  width: 30%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  background-color: rgba(248, 248, 248, 0.623);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.picture-container:hover {
+  transform: scale(1.1);
+}
+
+.picture-container {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  transition: transform 400ms ease;
+}
+
+.picture-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  object-fit: cover;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.aboutMe-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 50px;
+  width: 70%;
+}
+
+.aboutMe-textContainer {
+  width: 70%;
+}
+
+/* -------------------------PROJECT SECTION  */
+
+.projects-section {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+.projectContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
+  padding-bottom: 40px;
+}
+
+.project-imgContainer {
+  max-width: 700px;
+  min-width: 500px;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.project-imgContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  object-fit: cover;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 50px;
+  width: 70%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 30vh;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.623);
+}
+
+.icons {
+  height: 20vh;
+}
+.slide-right {
+  animation: 1s slide-right 1s forwards;
+}
+
+footer a {
+  padding: 10px;
+}
+
+@keyframes slide-right {
+  to {
+    transform: translate(-90%, -100%);
+  }
+}
