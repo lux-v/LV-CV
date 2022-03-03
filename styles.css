@@ -116,6 +116,7 @@ a {
   transition: all 400ms ease;
   background-color: white;
   font-family: "Roboto", sans-serif;
+  color: black;
 }
 
 .styledButton:hover {
