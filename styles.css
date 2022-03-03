@@ -29,9 +29,9 @@ html {
   background: rgba(255, 0, 0, 0.623);
 }
 
+/* -------------------------REUSABLE*/
 h1 {
   font-size: 4rem;
-
   color: black;
   font-weight: bold;
 }
@@ -40,7 +40,6 @@ h2 {
   font-size: 3rem;
   color: white;
   background-color: rgba(255, 0, 0, 0.623);
-
   height: 30vh;
 
   margin-bottom: 100px;
@@ -50,14 +49,21 @@ h2 {
 h3 {
   font-size: 2.5rem;
   margin: 50px 0 50px 50px;
+  padding: 5px;
 
+  border: 2px solid transparent;
   border-bottom: 2px solid rgba(255, 0, 0, 0.623);
+
+  transition: border 200ms ease;
+}
+h3:hover {
+  border: 2px solid rgba(255, 0, 0, 0.623);
+  cursor: pointer;
 }
 
 h4 {
   font-size: 1.5rem;
   padding: 30px 15px 5px 15px;
-
   width: 300px;
 
   color: white;
@@ -73,11 +79,17 @@ span {
   letter-spacing: 1.5px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .center {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .row {
@@ -94,7 +106,6 @@ span {
   justify-content: center;
   align-items: center;
   text-align: justify;
-  padding: 20px;
   width: 70%;
 }
 
@@ -133,32 +144,9 @@ span {
   transform: translate(-300%, -100%);
   z-index: 2;
 }
-
 .word-color {
   color: rgba(255, 0, 0, 0.623);
 }
-
-/* -------------------------NAVBAR*/
-
-/* .navbar-container {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-}
-
-nav {
-  width: 7.5%;
-  height: 100%;
-  background-color: rgba(255, 0, 0, 0.623);
-}
-
-.content {
-  width: 92.5%;
-  height: 100%;
-  left: 7.5%;
-} */
-
-/* -------------------------ABOUT ME SECTION  */
 
 .aboutMe-section {
   width: 100%;
@@ -276,23 +264,30 @@ nav {
   width: 50%;
 }
 
+/* -------------------------FOOTER*/
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   min-height: 30vh;
   width: 100%;
   background-color: rgba(255, 0, 0, 0.623);
 }
+footer a {
+  padding: 15px;
+}
+
+footer p {
+  padding: 4px;
+  color: white;
+}
 
 .icons {
-  height: 20vh;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 
 .icons-mini {
@@ -306,15 +301,7 @@ footer {
     brightness(100%) contrast(119%);
 }
 
-footer a {
-  padding: 15px;
-}
-
-footer p {
-  padding: 4px;
-  color: white;
-}
-
+/* -------------------------HERO TEXT GOES FROM LEFT TO THE RIGHT */
 .slide-right {
   animation: 1s slide-right 1s forwards;
 }
