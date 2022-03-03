@@ -5,160 +5,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" href="/img/fav-icon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="img/github.svg">
-    <link rel="stylesheet" type="text/css" href="vendors/icons/logo-instagram.svg">
-    <link rel="stylesheet" type="text/css" href="vendors/icons/hamburger.svg">
-
+    <link rel="stylesheet" type="text/css" href="img/github.svg" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendors/icons/logo-instagram.svg"
+    />
+    <link rel="stylesheet" type="text/css" href="vendors/icons/hamburger.svg" />
 
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="queries.css" />
 
     <title>Luka Vuk - CV</title>
   </head>
+
   <body>
+    <!-- HEADER-->
     <header>
       <div class="hero-section">
         <h1 class="hero-text slide-right">
-          <span> Hello, my name is <span class="word-color">Luka Vuk</span></span>
+          <span>
+            Hello, my name is <span class="word-color">Luka Vuk</span></span
+          >
         </h1>
       </div>
     </header>
 
-<!--     <div class="navbar-container">
-      <nav>
+    <!-- SECTION ABOUT ME-->
+    <section class="aboutMe-section">
+      <h2 class="center">About me</h2>
 
+      <div class="aboutMe-container row center">
+        <div class="aboutMe-picture">
+          <div class="picture-container">
+            <img src="/img/my-picture.jpeg" alt="myImage" />
+          </div>
+        </div>
+        <div class="text">
+          <div class="aboutMe-textContainer">
+            <p>
+              I completed my bechelor's degree at the Faculty of Organization
+              and Informatics in Varaždin, and I am currently in my final year
+              of graduate studies. After college, I want to direct my further
+              progress towards web development, and for that very reason I
+              started to study and learn content related to website development
+              in my free time.
+            </p>
+          </div>
+          <a href="/download/LV_CV_eng.pdf" download="LukaVuk-CV">
+            <button class="styledButton">Download my CV</button>
+          </a>
+        </div>
+      </div>
+    </section>
 
-      </nav> -->
+    <!-- SECTION ABOUT PROJECTS-->
+    <section class="projects-section">
+      <h2 class="center">Projects</h2>
 
-      <div class="content">
-        <section class="aboutMe-section">
-          <h2 class="center">About me</h2>
-
-          <div class="aboutMe-container row center">
-            <div class="aboutMe-picture">
-              <div class="picture-container">
-                <img src="/img/my-picture.jpeg" alt="myImage" />
-              </div>
-            </div>
-
+      <!-- Projekt 1 -->
+      <div class="project row">
+        <a href="https://lux-v.github.io/OmniFood/" target="_blank">
+          <h3>Omni Food</h3>
+        </a>
+        <div class="center">
+          <div class="project-imgContainer">
+            <img src="img/project1.jpg" alt="project1" />
+          </div>
+          <div class="project-contentContainer">
             <div class="text">
-              <div class="aboutMe-textContainer">
-                <p>
-                  I completed my bechelor's degree at the Faculty of Organization and Informatics in Varaždin, and I am currently in my final year of graduate studies. After college, I want to direct my further progress towards web development, and for that very reason I started to study and learn content related to website development in my free time.</p>
-              </div>
-
-              <a href="/download/LV_CV_eng.pdf" download="LukaVuk-CV">
-                
-                <button class="styledButton" >Download my CV</button>
+              <p>
+                Web-site for fictional company OmniFod. This project was created
+                for the purpose of practicing CSS and HTML.
+              </p>
+            </div>
+            <a href="https://github.com/lux-v/OmniFood" target="_blank">
+              <button class="styledButton">GitHub repository</button>
             </a>
-            </div>
+            <a href="https://lux-v.github.io/OmniFood/" target="_blank">
+              <button class="styledButton">Web-site</button>
+            </a>
           </div>
-        </section>
+        </div>
+      </div>
 
-
-    
-        <section class="projects-section">
-          <h2 class="center">Projects</h2>
-         
-          <div class="project row">
-            <h3>Omni Food</h3>
-
-            <div class="center">
-              <div class="project-imgContainer">
-                <img src="img/project1.jpg" alt="project1" />
-              </div>
-              <div class="project-contentContainer">
-
-                <div class="text">
-                  <p>Web-site for fictional company OmniFod. This project was created for the purpose of practicing CSS and HTML. </p>
-                </div>
-                <a href="https://github.com/lux-v/OmniFood" target="_blank">
-                  <button class="styledButton" >GitHub repository</button>
-                </a>
-
-                <a href="https://lux-v.github.io/OmniFood/"  target="_blank">
-                  <button class="styledButton" >Web-site</button>
-                </a>
-              </div>
-              
-            </div>
+      <!-- Projekt 2 -->
+      <div class="project row">
+        <a href="https://lux-v.github.io/OmniFood/" target="_blank">
+          <h3>Robofriends</h3>
+        </a>
+        <div class="center">
+          <div class="project-imgContainer">
+            <img src="img/project3.jpg" alt="project3" />
           </div>
-        
-          <div class="project row">
-            <h3>Robofriends</h3>
-            <div class="center">
-              <div class="project-imgContainer">
-                <img src="img/project3.jpg" alt="project3" />
-              </div>
-              <div class="project-contentContainer">
-                <div class="text">
-                  <p>This is simple app made in React. Robohash API is used in this project.
-                  </p>
-                </div>
-
-                <a href="https://github.com/lux-v/robofriends"  target="_blank">
-                  <button class="styledButton" >GitHub repository</button>
-                </a>
-
-                <a href="https://lux-v.github.io/robofriends/"  target="_blank">
-                  <button class="styledButton" >Web-site</button>
-                </a>
-              </div>
-              
+          <div class="project-contentContainer">
+            <div class="text">
+              <p>
+                This is simple app made in React. Robohash API is used in this
+                project.
+              </p>
             </div>
+            <a href="https://github.com/lux-v/robofriends" target="_blank">
+              <button class="styledButton">GitHub repository</button>
+            </a>
+            <a href="https://lux-v.github.io/robofriends/" target="_blank">
+              <button class="styledButton">Web-site</button>
+            </a>
           </div>
+        </div>
+      </div>
 
-          <div class="project row">
-            <h3>TO-DO list</h3>
-            <div class="center">
-              <div class="project-imgContainer">
-                <img src="img/project2.jpg" alt="project2" />
-              </div>
-              <div class="project-contentContainer">
-                <div class="text">
-                  <p>The project was created for the purpose of practicing JavaScript, CSS and HTML.
-                  </p>
-                </div>
-                <a href="https://github.com/lux-v/To-Do-list"  target="_blank">
-                  <button class="styledButton" >GitHub repository</button>
-                </a>
-
-                <a href="https://lux-v.github.io/To-Do-list/"  target="_blank">
-                  <button class="styledButton" >Web-site</button>
-                </a>
-
-              </div>
+      <!-- Projekt 3 -->
+      <div class="project row">
+        <a href="https://lux-v.github.io/OmniFood/" target="_blank">
+          <h3>TO-DO list</h3>
+        </a>
+        <div class="center">
+          <div class="project-imgContainer">
+            <img src="img/project2.jpg" alt="project2" />
+          </div>
+          <div class="project-contentContainer">
+            <div class="text">
+              <p>
+                The project was created for the purpose of practicing
+                JavaScript, CSS and HTML.
+              </p>
             </div>
+            <a href="https://github.com/lux-v/To-Do-list" target="_blank">
+              <button class="styledButton">GitHub repository</button>
+            </a>
+            <a href="https://lux-v.github.io/To-Do-list/" target="_blank">
+              <button class="styledButton">Web-site</button>
+            </a>
           </div>
-        </section>
-<!--       </div>
-    </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER-->
     <footer>
       <h4>Contact me</h4>
-      <p style="margin-top: 5px;">luka.vuk0909@gmail.com</p>
+      <p style="margin-top: 5px">luka.vuk0909@gmail.com</p>
       <p>+385995961959</p>
-
-      <div class ="icons">
+      <div class="icons">
         <a href="https://github.com/lux-v" target="_blank">
-
-            <img class="icons-mini" src="img/github.svg" alt="github-logo">
+          <img class="icons-mini" src="img/github.svg" alt="github-logo" />
         </a>
-
-        <a href="https://www.linkedin.com/in/luka-vuk-817b60216/" target="_blank">
-
-          <img class="icons-mini" src="img/linkedin.svg" alt="linkedin-logo">
+        <a
+          href="https://www.linkedin.com/in/luka-vuk-817b60216/"
+          target="_blank"
+        >
+          <img class="icons-mini" src="img/linkedin.svg" alt="linkedin-logo" />
         </a>
-        <a href="https://gmail.com" target="_blank">
-
-          <img class="icons-mini" src="img/gmail.svg" alt="gmail-logo">
+        <a href="mailto:luka.vuk0909@gmail.com">
+          <img class="icons-mini" src="img/gmail.svg" alt="gmail-logo" />
         </a>
-    </div>
+      </div>
     </footer>
   </body>
 </html>
