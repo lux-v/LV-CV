@@ -48,7 +48,7 @@ h2 {
 
 h3 {
   font-size: 2.5rem;
-  margin: 50px 0 50px 50px;
+  margin: 50px 0;
   padding: 5px;
 
   border: 2px solid transparent;
@@ -153,6 +153,26 @@ a {
   margin-top: 0;
 }
 
+.aboutMe-section h3 {
+  padding: 20px;
+}
+.aboutMe-section h3:hover {
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+
+  border-bottom: 2px solid rgba(255, 0, 0, 0.623);
+  cursor: default;
+}
+
+.aboutMe-section h4 {
+  color: black;
+}
+
+.technologies .center {
+  flex-direction: column;
+}
+
 .aboutMe-container {
   height: calc(100% - 30%);
 }
@@ -199,6 +219,27 @@ a {
 
 .aboutMe-textContainer {
   width: 70%;
+}
+
+.technologiesPictureContainer {
+  padding: 20px;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.technologiesPicture img {
+  width: 100px;
+}
+
+.technologies .text {
+  min-height: 200px;
 }
 
 /* -------------------------PROJECT SECTION  */
