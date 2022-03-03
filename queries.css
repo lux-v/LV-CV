@@ -1,13 +1,4 @@
-/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
-@media only screen and (max-width: 480px) {
-  .col {
-    /*margin: 1% 0 1% 0%;*/
-    margin: 0 0 10px 0;
-  }
-}
-
 /*  --------------------------------------------------- 250px */
-
 @media only screen and (max-width: 250px) {
   p {
     font-size: 16px;
@@ -213,6 +204,24 @@
     padding: 8px;
     width: 130px;
   }
+
+  h3:hover {
+    border: 2px solid rgba(255, 0, 0, 0.623);
+    cursor: pointer;
+  }
+  .styledButton:hover {
+    background-color: rgba(255, 0, 0, 0.623);
+    cursor: pointer;
+  }
+
+  .picture-container:hover {
+    transform: scale(1.1);
+  }
+  .icons-mini:hover {
+    filter: invert(11%) sepia(74%) saturate(6288%) hue-rotate(4deg)
+      brightness(100%) contrast(119%);
+    cursor: pointer;
+  }
 }
 
 /*  (max-width: 1024px) and (min-width: 769px)   ============================================================================= */
@@ -265,6 +274,24 @@
     width: 40px;
     height: 40px;
   }
+
+  h3:hover {
+    border: 2px solid rgba(255, 0, 0, 0.623);
+    cursor: pointer;
+  }
+  .styledButton:hover {
+    background-color: rgba(255, 0, 0, 0.623);
+    cursor: pointer;
+  }
+
+  .picture-container:hover {
+    transform: scale(1.1);
+  }
+  .icons-mini:hover {
+    filter: invert(11%) sepia(74%) saturate(6288%) hue-rotate(4deg)
+      brightness(100%) contrast(119%);
+    cursor: pointer;
+  }
 }
 
 /* (max-width: 1200px) and (min-width: 1025px)====================================================== */
@@ -289,6 +316,46 @@
     min-width: 280px;
     max-width: 320px;
     max-height: 320px;
+  }
+
+  h3:hover {
+    border: 2px solid rgba(255, 0, 0, 0.623);
+    cursor: pointer;
+  }
+  .styledButton:hover {
+    background-color: rgba(255, 0, 0, 0.623);
+    cursor: pointer;
+  }
+
+  .picture-container:hover {
+    transform: scale(1.1);
+  }
+  .icons-mini:hover {
+    filter: invert(11%) sepia(74%) saturate(6288%) hue-rotate(4deg)
+      brightness(100%) contrast(119%);
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  /*  SECTION-STEPS   ============================================================================= */
+
+  h3:hover {
+    border: 2px solid rgba(255, 0, 0, 0.623);
+    cursor: pointer;
+  }
+  .styledButton:hover {
+    background-color: rgba(255, 0, 0, 0.623);
+    cursor: pointer;
+  }
+
+  .picture-container:hover {
+    transform: scale(1.1);
+  }
+  .icons-mini:hover {
+    filter: invert(11%) sepia(74%) saturate(6288%) hue-rotate(4deg)
+      brightness(100%) contrast(119%);
+    cursor: pointer;
   }
 }
 
